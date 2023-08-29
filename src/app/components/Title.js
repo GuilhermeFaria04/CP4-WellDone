@@ -1,12 +1,12 @@
 "use client"
 
-import React from 'react';
+
 import { styled } from 'styled-components';
 
 
-function Title() {
+function Title(props) {
     return  <div>
-                <StyledTitulo>Planos de Seguro</StyledTitulo>
+                <StyledTitulo>{props.text}</StyledTitulo>
             </div>
 }
 

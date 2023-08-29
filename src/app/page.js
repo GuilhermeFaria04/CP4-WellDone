@@ -1,28 +1,23 @@
 "use client"
 
-import { styled } from 'styled-components'
 import Button from './components/button'
 import Title from './components/Title'
 import Planosbutton from './components/PlanosButton'
+import Center from './components/center.'
 
 
 
 export default function Home() {
-  return (<Center>
-    <Title/>
-    <Button/>
-    <Planosbutton/>
-  </Center>)
+  return (
+    <Center>
+      <Title text= "Planos de Serviços"/>
+      <Button text= "Enviar"/>
+      <Planosbutton text= "Pedal Essencial"/>
+    </Center>)
 }
 
 
-const Center = styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-`
+
 
 
 

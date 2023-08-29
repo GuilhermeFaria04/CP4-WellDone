@@ -1,16 +1,24 @@
 "use client"
 
-import React from 'react';
+
+import Image from 'next/image';
 import { styled } from 'styled-components';
 
-function Planosbutton({ text }) {
+
+function Planosbutton(props) {
     return  <div>
                <StyledButton>
                     <Centerh1>
-                        Pedal essencial
+                        {props.text}
                     </Centerh1>
                    <StyledImagem>
-                       <img id="Imagem" src="seta.svg" alt="Minha Imagem"></img>
+                        <Image 
+                            id="Imagem" 
+                            src="imagens/seta.svg" 
+                            alt="Minha Imagem"
+                            width={500}
+                            height={500}>
+                        </Image>
                    </StyledImagem>
                </StyledButton>
             </div>

@@ -1,19 +1,18 @@
 "use client"
 
-import React, {} from 'react';
+
 import { styled } from 'styled-components';
 
 
-
-function Button() {
+function Button(props) {
 
     return  <div>
-                <StyledButton>Enviar</StyledButton>
+                <StyledButton>{props.text}</StyledButton>
             </div>
 }
 
-
 export default Button;
+
 
 const StyledButton = styled.button`
     width: 200px;
